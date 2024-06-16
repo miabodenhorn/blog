@@ -1,11 +1,153 @@
-/*
+/* Style Sheet */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, nav, main, section, footer {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #fdfd96;
+    color: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
+header h1, header p {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #dfb7f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 main {
-    margin: auto;
-    width: 700px;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
-img {
+
+#blog {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background: #a5d6a7;
+    padding: 15px;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    color: #f484dc;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* table style */
+table {
     width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
-*/
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #eb6361; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* images and caption style */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.floated {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* some additional spacing for about page */
+.about-content {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* ytype, class, ID, and attribute selectors */
+header {
+    background-color: #fdfd96;
+    color: #333;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+#blog article {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* My author link */
+a[rel="Author"] {
+    color: #dfb7f3; 
+}
